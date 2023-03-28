@@ -11,7 +11,7 @@ const HTMLResponse1 = document.querySelector("#app1");
 const HTMLResponse2 = document.querySelector("#app2");
 //con fetch traemos la dirección 
 // fetch(`${API_URL}/users`)
-fetch(`${API_URL}/users`)
+fetch('archivo.json')
 .then((response) =>response.json())
 .then((users) => {
     const tpl = users.map(user => `<li>Nombre: ${user.name}<br>Correo: ${user.email}</li>`);
